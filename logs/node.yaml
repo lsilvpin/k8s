@@ -1,0 +1,83 @@
+Name:               kind-cluster-control-plane
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    ingress-ready=true
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-cluster-control-plane
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 25 Jan 2024 18:05:29 -0300
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-cluster-control-plane
+  AcquireTime:     <unset>
+  RenewTime:       Thu, 25 Jan 2024 20:42:09 -0300
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Thu, 25 Jan 2024 20:37:52 -0300   Thu, 25 Jan 2024 18:05:28 -0300   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Thu, 25 Jan 2024 20:37:52 -0300   Thu, 25 Jan 2024 18:05:28 -0300   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Thu, 25 Jan 2024 20:37:52 -0300   Thu, 25 Jan 2024 18:05:28 -0300   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Thu, 25 Jan 2024 20:37:52 -0300   Thu, 25 Jan 2024 18:05:51 -0300   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  10.89.0.2
+  Hostname:    kind-cluster-control-plane
+Capacity:
+  cpu:                8
+  ephemeral-storage:  1055762868Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             7933928Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  1055762868Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             7933928Ki
+  pods:               110
+System Info:
+  Machine ID:                 43259466c0c3405c9cc18ce15939cf65
+  System UUID:                43259466c0c3405c9cc18ce15939cf65
+  Boot ID:                    e274fdac-b61e-4b21-af30-211a72eda45c
+  Kernel Version:             5.15.133.1-microsoft-standard-WSL2
+  OS Image:                   Debian GNU/Linux 11 (bullseye)
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.1
+  Kubelet Version:            v1.27.3
+  Kube-Proxy Version:         v1.27.3
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+ProviderID:                   kind://podman/kind-cluster/kind-cluster-control-plane
+Non-terminated Pods:          (12 in total)
+  Namespace                   Name                                                  CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                  ------------  ----------  ---------------  -------------  ---
+  default                     pod-1                                                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         47m
+  default                     pod-2                                                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         33m
+  default                     portal-noticias                                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         53m
+  kube-system                 coredns-5d78c9869d-85tp2                              100m (1%)     0 (0%)      70Mi (0%)        170Mi (2%)     156m
+  kube-system                 coredns-5d78c9869d-gj5hz                              100m (1%)     0 (0%)      70Mi (0%)        170Mi (2%)     156m
+  kube-system                 etcd-kind-cluster-control-plane                       100m (1%)     0 (0%)      100Mi (1%)       0 (0%)         156m
+  kube-system                 kindnet-52q86                                         100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      156m
+  kube-system                 kube-apiserver-kind-cluster-control-plane             250m (3%)     0 (0%)      0 (0%)           0 (0%)         156m
+  kube-system                 kube-controller-manager-kind-cluster-control-plane    200m (2%)     0 (0%)      0 (0%)           0 (0%)         156m
+  kube-system                 kube-proxy-2zlbx                                      0 (0%)        0 (0%)      0 (0%)           0 (0%)         156m
+  kube-system                 kube-scheduler-kind-cluster-control-plane             100m (1%)     0 (0%)      0 (0%)           0 (0%)         156m
+  local-path-storage          local-path-provisioner-6bc4bddd6b-n8lwb               0 (0%)        0 (0%)      0 (0%)           0 (0%)         156m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                950m (11%)  100m (1%)
+  memory             290Mi (3%)  390Mi (5%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>

@@ -1,0 +1,6 @@
+kubectl apply -f ".\pod-portal-noticias.yaml"
+kubectl apply -f ".\pod-sys-noticias.yaml"
+kubectl apply -f ".\pod-db-noticias.yaml"
+kubectl apply -f ".\svc-portal-noticias.yaml"
+kubectl apply -f ".\svc-sys-noticias.yaml"
+kubectl apply -f ".\svc-db-noticias.yaml"
